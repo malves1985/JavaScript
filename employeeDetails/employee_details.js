@@ -1,7 +1,7 @@
 const employees = [
-      { id: 1, name: 'John Doe', age: 30, department: 'IT', salary: 50000 },
-      { id: 2, name: 'Alice Smith', age: 28, department: 'HR', salary: 45000 },
-      { id: 3, name: 'Bob Johnson', age: 35, department: 'Finance', salary: 60000 },
+      { id: 1, name: 'John Doe', age: 30, department: 'IT', salary: 50000, speciaization:'Javascript'},
+      { id: 2, name: 'Alice Smith', age: 28, department: 'HR', salary: 45000, speciaization:'Python'},
+      { id: 3, name: 'Bob Johnson', age: 35, department: 'Finance', salary: 60000, speciaization:'Java'},
       //... More employee records can be added here
     ];
 
@@ -28,4 +28,10 @@ function findEmployeeById(employeeId) {
     else{
         document.getElementById('employeesDetails').innerHTML = 'no employee has been found with this ID';
     }
+}
+
+function findEmployeeByJavascript() {
+    const spEmployees = employees.filter(employee => employee.speciaization === 'Javascript');
+    const hspEmployeesDisplay = spEmployees.map((employee, index) => `<p>${employee.id}: ${employee.name}: ${employee.name} - ${employee.department} - ${employee.speciaization} - $${employee.salary}</p>`).join('');
+    document.getElementById('employeesDetails').innerHTML = hspEmployeesDisplay;
 }
