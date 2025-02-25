@@ -1,0 +1,89 @@
+body {
+  font-size: 12px;
+  background-image: url('https://viagemeturismo.abril.com.br/wp-content/uploads/2017/01/belem-tower-2809818_1920.jpg');
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 12px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+#btnSearch,#btnClear {
+    background-color: #4CAF50;
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 12px;
+    padding: 12px 12px;
+    border-radius: 5px;
+    word-spacing: 10px;
+}
+
+#search {
+    background-color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 12px;
+    padding: 12px 12px;
+    border-radius: 15px;
+    word-spacing: 10px;
+}
+
+#content1, #content2 {
+    width: 50%;
+    float: left;
+    margin-top: 150px;
+    word-spacing: 10px;
+    width: 800px;
+    height: 600px;
+}
+
+#info {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    font-size: 55px;
+    margin-left: 20px;
+}
+
+#info2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+#content2 {
+    background-color: white;
+}
+
+#localDesc .h1{
+    color: black;
+}
+
+#localDesc .h3{
+    color: rgb(190, 189, 189);
+}
