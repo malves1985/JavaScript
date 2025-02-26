@@ -3,6 +3,10 @@ body {
   background-image: url('https://viagemeturismo.abril.com.br/wp-content/uploads/2017/01/belem-tower-2809818_1920.jpg');
 }
 
+#home {display:block;}
+#contact {display:none;}
+#about {display:none;}
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -54,12 +58,24 @@ li a:hover {
 }
 
 #content1, #content2 {
-    width: 50%;
     float: left;
-    margin-top: 150px;
+    margin-top: 120px;
     word-spacing: 10px;
     width: 800px;
     height: 600px;
+}
+
+#content1 {
+    width: 40%;
+    float: left;
+    margin-left: 50px;
+}
+
+#content2 {
+    width: 50%;
+    float: left;
+    width: 700px;
+    height: 500px;
 }
 
 #info {
@@ -76,14 +92,14 @@ li a:hover {
     margin-left: 20px;
 }
 
-#content2 {
+#contentList {
     background-color: white;
 }
 
-#localDesc .h1{
+#localDesc h1{
     color: black;
 }
 
-#localDesc .h3{
-    color: rgb(190, 189, 189);
+#localDesc h3{
+    color: rgb(151, 150, 150);
 }
